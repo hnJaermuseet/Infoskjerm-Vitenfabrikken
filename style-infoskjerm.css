@@ -1,0 +1,116 @@
+/*
+Infoskjerm-Vitenfabrikken
+Copyright (C) 2008-2010  Jaermuseet <http://www.jaermuseet.no>
+Contact: <hn@jaermuseet.no> 
+Project: <http://github.com/hnJaermuseet/Infoskjerm-Vitenfabrikken>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+body
+{
+	/* Normal tekst */
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: black;
+	
+	background-color: #F5F5F5;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	/* Standard innstillinger for overskrifter */
+	font-family: Arial, Helvetica;
+	color: black;
+}
+
+h1 { font-size: 18px; }
+h2 { font-size: 15px; }
+h3 { font-size: 13px; }
+h4 { font-size: 11px; }
+
+/* Linker */
+A:link { color: #0000FF; text-decoration: none; }
+A:visited { color: #0000FF; text-decoration: none; }
+A:active { color: #0000FF; text-decoration: none; }
+A:hover { color: red; text-decoration: none; }
+
+span.editlinks {
+	font-size: 8pt;
+}
+
+/* Skjema farger */
+input
+{
+	font-family: Tahoma, Arial, Helvetica;
+	font-size: 11px;
+}
+
+textarea
+{
+	font-family: Tahoma, Arial, Helvetica;
+	font-size: 11px;
+}
+
+select
+{
+	font-family: Tahoma, Arial, Helvetica;
+	font-size: 11px;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+td.slidelist
+{
+	vertical-align: middle;
+	border: 1px solid #D5D5D5;
+}
+
+table
+{
+	border-collapse: collapse;
+}
+
+font.feil
+{
+	color: red;
+}
+
+span.mindretekst {
+	font-size: 8pt;
+}
+
+td.monthTable {
+	font-size: 9pt;
+}
+
+a.monthTableTop:link { color: black; text-decoration: none; }
+a.monthTableTop:visited { color: black; text-decoration: none; }
+a.monthTableTop:active { color: black; text-decoration: none; }
+a.monthTableTop:hover { color: #5B69A6; text-decoration: none; }
+a.monthTableWeek:link { color: black; text-decoration: none; font-size: 9pt;}
+a.monthTableWeek:visited { color: black; text-decoration: none; font-size: 9pt;}
+a.monthTableWeek:active { color: black; text-decoration: none; font-size: 9pt;}
+a.monthTableWeek:hover { color: #5B69A6; text-decoration: none; font-size: 9pt;}
+
+
+TD.weeknum {background-color:#CCCCCC; padding: 1px 1px 1px 1px; font-size: 9pt;}
+
+#unused a {
+	color: #999999;
+}
