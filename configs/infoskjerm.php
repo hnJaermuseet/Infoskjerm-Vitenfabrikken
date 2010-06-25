@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 Infoskjerm-Vitenfabrikken
@@ -116,6 +116,8 @@ function behandleDato ($line, $format = array ('d', 'm', 'y', 'h', 'i', 's'), $s
 		{
 			if(isset($format[$denne]))
 			{
+				if(!isset($disse_tall[$format[$denne]]))
+					$disse_tall[$format[$denne]] = '';
 				$disse_tall[$format[$denne]] .= $line{$i};
 				$num_siste = true;
 			}
