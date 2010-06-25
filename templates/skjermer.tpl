@@ -26,9 +26,12 @@ Velkommen til kontroll av infoskjermer. F&oslash;lgende skjermer er tilgjengelig
 
 <br><br>
 <table>
+	<tr>
+		<td style="font-size: 1.5em; text-align: center;"><a href="skjerm2.php">Oversikt over alle kj&oslash;rende slides</a></td>
+	</tr>
 {foreach from=$skjermer item=skjerm}
 	<tr>
-		<td><font size="5">- <a href="skjerm.php?skjerm_id={$skjerm.skjerm_id}">{$skjerm.skjerm_navn}</a></font></td>
+		<td style="font-size: 1.3em; text-align: center;"><a href="skjerm.php?skjerm_id={$skjerm.skjerm_id}" style="color: #0000AA;">{$skjerm.skjerm_navn}</a></td>
 	</tr>
 {/foreach}
 </table>
