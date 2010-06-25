@@ -1,0 +1,4 @@
+INNSTALLASJON AV INFOSKJERM-SYSTEMET
+
+X. Kopier configs/mysql_connect.copy.php til configs/mysql_connect.php
+X+1. Endre configs/mysql_connect.php til å koble til din databaseserver
