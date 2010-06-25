@@ -70,7 +70,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 			<span class="mindretekst">Til:</span> {$slides.slide_til|printDato}
 		</td>
 		<td class="slidelist">
-			<a href="slide_edit.php?skjerm_id={$skjerm.skjerm_id}&amp;slide_nr={$slidenr}&amp;dato={$tid}&amp;redirect1=skjerm&amp;redirect2={$skjerm.skjerm_id}&amp;redirect3={$tid|date_format:"%Y-%m-%d"}">{iconHTML ico="page_add"} Legg til ny på denne dagen</a><br>
+			<a href="slide_edit.php?skjerm_id={$skjerm.skjerm_id}&amp;slide_nr={$slidenr}&amp;redirect1=skjerm&amp;redirect2={$skjerm.skjerm_id}&amp;redirect3={$tid|date_format:"%Y-%m-%d"}">{iconHTML ico="page_add"} Legg til ny slide på dette skjermbildet</a><br>
+			<a href="slide_edit.php?skjerm_id={$skjerm.skjerm_id}&amp;slide_nr={$slidenr}&amp;dato={$tid}&amp;redirect1=skjerm&amp;redirect2={$skjerm.skjerm_id}&amp;redirect3={$tid|date_format:"%Y-%m-%d"}" style="font-size:0.8em;">{iconHTML ico="page_add" extra=' height="12"'} Legg til ny slide på denne dagen på dette skjermbildet</a><br>
 		</td>
 	</tr>
 	{if $slides_andre.$slidenr|@count > 0}
