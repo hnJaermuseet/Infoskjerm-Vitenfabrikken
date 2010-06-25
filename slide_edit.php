@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 Infoskjerm-Vitenfabrikken
@@ -127,7 +127,7 @@ $slide_nr		= 1;
 $slide_innhold_heading	= '';
 $slide_innhold				= '';
 
-if(isset($_GET['slide_id_fra']) || is_numeric($_GET['slide_id_fra']))
+if(isset($_GET['slide_id_fra']) && is_numeric($_GET['slide_id_fra']))
 {
 	// Ny fra en annen slide
 	$Q_slide = mysql_query("select * from `slides` where `slide_id` = '".(int)$_GET['slide_id_fra']."'");
@@ -141,7 +141,7 @@ if(isset($_GET['slide_id_fra']) || is_numeric($_GET['slide_id_fra']))
 	$slide_pri = $slide['slide_pri'] + 1;
 	echo $slide['skjerm_id'];
 	$skjerm_id = splittIDs ($slide['skjerm_id']);
-	print_r($skjerm_id);
+	
 	if(isset($_GET['dato']) && is_numeric($_GET['dato']) && $_GET['dato'] > 0)
 	{
 		$slide_fra = mktime(0, 0, 0, date('m', $_GET['dato']), date('d', $_GET['dato']), date('Y', $_GET['dato']));
