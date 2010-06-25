@@ -6,3 +6,6 @@ jmbooking-test/*
 2009-03-28*
 2010-04-14*
 configs/mysql_connect.php
+img/infoskjerm-bg.png
+*.autosave
+jm-bookingtest

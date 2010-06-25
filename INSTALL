@@ -2,3 +2,6 @@ INNSTALLASJON AV INFOSKJERM-SYSTEMET
 
 X. Kopier configs/mysql_connect.copy.php til configs/mysql_connect.php
 X+1. Endre configs/mysql_connect.php til å koble til din databaseserver
+X+2. Endre vis.php til å passe dine behov. 
+     Det er f.eks. ikke bakgrunnsbilde inkludert under GPL på Github 
+     (img/infoskjerm-bg.png)
