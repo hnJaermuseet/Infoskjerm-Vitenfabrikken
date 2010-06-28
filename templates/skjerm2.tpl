@@ -54,7 +54,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 		{foreach from=$skjermer key="skjerm_id" item='skjerm'}
 			{if isset($skjerm.slides_nu.$key)}
 				{assign var='slides' value=$skjerm.slides_nu.$key}
-				<td class="slidelist">
+				<td class="slidelist{if $slides.slide_id != ''} slidemouseover slidenum{$slides.slide_id}{/if}"> 
 					{if $slides.slide_id != ''}
 						<a href="vis.php?slide_id={$slides.slide_id}">{$slides.slide_navn}</a>
 						<a href="slide_edit.php?slide_id={$slides.slide_id}&amp;redirect1=skjerm&amp;redirect2={$skjerm.skjerm_id}&amp;redirect3={$tid|date_format:"%Y-%m-%d"}">{iconHTML ico="page_edit" extra='height="12"'}</a>
@@ -69,5 +69,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 	</tr>
 {/section}
 </table>
+
+<script src="js/skjerm2.js"></script>
 
 {include file="footer.tpl"}

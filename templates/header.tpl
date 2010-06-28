@@ -24,6 +24,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 <link href="style-infoskjerm.css" rel="stylesheet" type="text/css">
 {config_load file=smarty.tpl.conf}
 <title>{$tittel} - {#sidetittel#}</title>
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
 </head>
 <body>
 

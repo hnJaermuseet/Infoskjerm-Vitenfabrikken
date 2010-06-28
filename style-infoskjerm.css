@@ -114,3 +114,8 @@ TD.weeknum {background-color:#CCCCCC; padding: 1px 1px 1px 1px; font-size: 9pt;}
 #unused a {
 	color: #999999;
 }
+
+td.slideselected
+{
+	background-color: white;
+}
