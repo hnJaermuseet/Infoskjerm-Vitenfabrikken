@@ -35,6 +35,7 @@ Dette er en liste med alle slides i databasen.
 				&nbsp;&nbsp;
 				<a href="slide_edit.php?slide_id={$slide.slide_id}">{iconHTML ico="page_edit" extra='height="12"'}</a>
 				<a href="slide_edit.php?slide_id_fra={$slide.slide_id}">{iconHTML ico="page_copy" extra='height="12"'}</a>
+				<a href="slide_delete.php?slide_id={$slide.slide_id}">{iconHTML ico="page_delete" extra='height="12"'}</a>
 			</span>
 		</td>
 		<!--
