@@ -43,7 +43,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 	<tr>
 		<td class="slidelist"><span class="mindretekst">&nbsp;</span></td>
 		{foreach from=$skjermer key="skjerm_id" item='skjerm'}
-		<td class="slidelist"><span class="mindretekst">{$skjerm.skjerm_navn}</span></td>
+		<td class="slidelist">
+			<span class="mindretekst">
+				<a href="skjerm.php?skjerm_id={$skjerm.skjerm_id}&amp;dato={$tid|date_format:"%Y-%m-%d"}">{$skjerm.skjerm_navn}</a>
+			</span>
+		</td>
 		{/foreach}
 	</tr>
 
