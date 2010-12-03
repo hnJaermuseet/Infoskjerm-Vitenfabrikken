@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /*
 Infoskjerm-Vitenfabrikken
@@ -142,10 +142,42 @@ echo '<html><head><title>';
 echo $heading.' - '.date('d.m.Y');
 echo '</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="css/vis.css" />
-</head>';
+<link rel="stylesheet" type="text/css" href="css/vis.css" />';
+ ?>
+ 
+<script type="text/javascript">
+<?php 
+/* 		JavaScript klokke 
+	* Denne klokken henter ned tiden ved hjelp av PHP funksjonen for tid. 
+	* Da JavaScript er ett klient basert script og ikke et server-side script 
+	* må vi ty til denne funksjonen for at klokkene skal stemme på skjermene. 
+	* Vi henter tid ved hjelp av time() og ganger så dette med *1000 for å få det ned i millisekunder
+	* så får vi Javascript til å sortere ut de forskjellige linjene til Timer, minutter og sekunder. 
+	* så sier vi javascript skal oppdatere dette hvert 1000 millisekund, altså, hvert sekund. 
+	* Denne vil oppdateres hver gang siden blir lastet på nytt slik at den alltid er konfigurert til serverklokken.
+	
+	- av Christer Nordbø - 2IKT - Akademiet
+	*/
+?>
+serverdato = new Date(<?php echo time()*1000; ?>);
+servertid = serverdato.getTime();
 
-echo '<body background="img/infoskjerm-bg.png" style="margin: 0px; padding: 0px;">'.chr(10);
+function visTid() {
+	dato = new Date(servertid);
+	time = (dato.getHours() < 10) ? "0"+(Number(dato.getHours())) : (Number(dato.getHours()));
+	minutt = (dato.getMinutes() < 10) ? "0"+(Number(dato.getMinutes())) : (Number(dato.getMinutes()));
+	sekund = (dato.getSeconds() < 10) ? "0"+(Number(dato.getSeconds())) : (Number(dato.getSeconds()));
+	document.getElementById("klokke").innerHTML = time+":"+minutt+":"+sekund;
+	servertid += 1000;
+}
+setInterval("visTid()", 1000);
+</script>
+
+</head>
+<?php
+
+echo '<body onload="visTid()" background="img/infoskjerm-bg.png" style="margin: 0px; padding: 0px;">'.chr(10);
+echo '<div id="klokke" class="klokkeTekst"></div>'.chr(10);
 echo '<!-- '.$slide['hidden_msg'].' -->'.chr(10);
 echo '  <div id="heading" style="
 max-width: 90%; font-family: arial;

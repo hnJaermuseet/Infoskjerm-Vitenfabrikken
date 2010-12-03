@@ -18,7 +18,12 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
-
+.klokkeTekst {
+	text-align:right;
+	position:relative;
+	top:-25px;
+	left:-25px;
+}
 .veldigLitenTekst {
 	font-size: 24pt;
 }
@@ -33,6 +38,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 .storTekst {
 	font-size: 50pt;
+}
+
+.tittelTekst {
+	font-size: 50pt;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 p {
