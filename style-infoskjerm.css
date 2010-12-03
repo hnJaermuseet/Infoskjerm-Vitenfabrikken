@@ -117,7 +117,11 @@ TD.weeknum {background-color:#CCCCCC; padding: 1px 1px 1px 1px; font-size: 9pt;}
 
 td.slideselected
 {
-	background-color: white;
+	background-color: black;
+}
+td.slideselected a
+{
+	color: white;
 }
 
 table.wikitable, table.prettytable {
